@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <meta charset="utf-8">
+    <title>Online Art Gallery </title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+    <h2>Artworks</h2>
+    <div class="Main" id="Main_img_box">
+        <img src="Art1.jpg" id="Main_img">
+        <span onclick="closeMain_img()">X</span>
+    </div>
+    <div class="Artworks">
+    <img width="500px" height="500px" src="Art1.jpg" alt="The Starry Night" onclick="openMain_img(this.src)">
+    <img width="500px" height="500px" src="Art2.jpg" alt="Water-Lily Pond" onclick="openMain_img(this.src)">
+    <img width="500px" height="500px" src="Art3.jpg" alt="Light in the West, Beauvais" onclick="openMain_img(this.src)">
+    <img width="500px" height="500px" src="Art4.jpg" alt="Avond (Evening): The Red Tree" onclick="openMain_img(this.src)">
+    <img width="500px" height="500px" src="Art5.jpg" alt="Nocturne in Black and Gold _ the Falling Rocket" onclick="openMain_img(this.src)">
+    <img width="500px" height="500px" src="Art6.jpg" alt="Mirror Hall" onclick="openMain_img(this.src)">
+    </div>
+    <h2>Artists</h2>
+    <h3>Vincent van Gogh</h3>
+    <p>Vincent van Gogh (1853-1890) was a Dutch post-impressionist painter known for his vibrant colors and expressive brushwork. Despite personal struggles and mental illness, he created a significant body of work in just a decade. Famous paintings like "The Starry Night" and "Sunflowers" reflect his emotional depth and connection with nature. Van Gogh's tragic life ended in suicide, but his art continues to inspire audiences worldwide.</p>
+    <h3>Claude Monet</h3>
+    <p>Claude Monet (1840-1926) was a French painter and a leading figure of the Impressionist movement. Known for his innovative approach to capturing light and atmosphere, his works include series of water lilies, haystacks, and Rouen Cathedral. His paintings broke from traditional styles and influenced the development of modern art. Monet's art continues to be celebrated worldwide.</p>
+    <h3>John Ruskin</h3>
+    <p>John Ruskin (1819-1900) was an influential English art critic, social thinker, and philanthropist. He advocated for art that reflected the truth and beauty of nature, and his ideas influenced the Pre-Raphaelite Brotherhood. Ruskin also addressed social issues, criticizing unchecked capitalism and promoting wealth redistribution. He founded the Guild of St. George and contributed to the preservation of historical landmarks. His ideas remain significant in art, society, and the environment.</p>
+    <h3>Piet Mondrian</h3>
+    <p>Piet Mondrian (1872-1944) was a Dutch painter and a pioneer of abstract art. He developed a style characterized by geometric shapes, primary colors, and a focus on simplicity and balance. His works, known as "Neoplasticism," have had a profound influence on modern art and design. Mondrian believed in the power of art to create harmony and sought to apply his principles to various fields, including architecture and design. His innovative approach to abstraction continues to inspire artists and designers today.</p>
+    <h3>James McNeill Whistler</h3>
+    <p>James McNeill Whistler (1834-1903) was an American artist known for his contributions to the Aesthetic Movement. He painted "Whistler's Mother" and "Nocturne in Black and Gold." His style emphasized composition, color, and mood. He also worked as an etcher and lithographer. Whistler believed in "art for art's sake" and his work remains influential in the art world.</p>
+    <h3>Kamal-ol-Molk</h3>
+    <p>Kamal-ol-Molk, born in 1848, was a prominent Iranian painter known for his blend of Persian miniature and European academic realism. He studied in Tehran and Paris, creating paintings of historical scenes, landscapes, and portraits. His masterpiece, "The Mirror Hall," is housed in the Golestan Palace Museum. Kamal-ol-Molk established the first modern art academy in Iran and had a significant influence on Persian art. He passed away in 1940, leaving a lasting legacy in Iranian art history.</p>
+    <h2>Contact Us</h2>
+    <div class="icons">
+        <i class='bx bxl-facebook-square' style='color:#3c5ac9 ; font-size: 70px;' ></i>
+        <i class='bx bxl-instagram' style='color:#d024c0; font-size: 70px;'  ></i>
+        <i class='bx bxl-whatsapp' style='color:#28f63d; font-size: 70px;'  ></i>
+    </div>
+    
+    <h2>Login Form</h2>
+    <form action="index.php"  method="post">
+        <div class="login">
+        <label for="textbox1">First Name</label>
+        <input id="textbox1" type="text" name="firstname" required>
+        </div>
+        <br>
+        <div class="login">
+            <label for="textbox2">Last Name</label>
+            <input id="textbox2" type="text" name="lastname" required> 
+        </div>
+        <br>
+        <div class="login">
+            <label>Gender: </label>
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="gender" value="m" required>
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="gender" value="f" required>
+        </div>
+        <br>
+        <div class="login">
+        <label for="email">E-mail</label>
+        <input id="email" type="email" name="email" placeholder="@gmail.com" required>
+        </div>
+        <br>
+        <div class="login">
+        <label for="pass">Password</label>
+        <input id="pass" type="password" name="pass" placeholder="********" required>
+        </div>
+        <br>
+        <div class="login">
+            <button class="btn" type="submit" name="btn">Login</button>
+        </div>
+    </form>
+
+    <script>
+        let Main_img_box = document.getElementById("Main_img_box");
+        let Main_img = document.getElementById("Main_img");
+        function openMain_img(pic){
+            Main_img_box.style.display = "flex"; 
+            Main_img.src = pic;
+        }
+        function closeMain_img(){
+            Main_img_box.style.display = "none"; 
+
+        }
+    </script>
+</body>
+
+</html>

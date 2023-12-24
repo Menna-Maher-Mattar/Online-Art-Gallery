@@ -1,0 +1,88 @@
+*{
+    background-color: #e9ecf6;
+   
+}
+.Artworks{
+    margin: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.Artworks img:hover{
+    scale: 0.9;
+    cursor: pointer;
+}
+.Main{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+.Main img{
+    width: 90%;
+    max-width: 500px;
+    max-height: 500px;
+}
+.Main span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    cursor: pointer;
+}
+.Main span:active{
+    scale: 0.8;
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #395a7f;
+}
+.login{
+    text-align: center;
+}
+h3{
+    text-align: center;
+    font-style: italic;
+   color: #5265b7;
+}
+p{
+    color: #5a6484;
+}
+label{
+    color: #4e61b7;
+}
+#textbox1,#textbox2,#email,#pass{
+    border-radius: 10px;
+    border-color: #395a7f;
+}
+.icons{
+    text-align: center;
+}
+i:hover{
+    rotate: -30deg;
+    cursor: pointer;
+}
+i:active{
+    scale: 0.8;
+}
+.btn{
+    border-radius: 10px;
+    border-color: #395a7f;
+    color: #4e61b7;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.btn:active{
+    scale: 0.8;
+}
